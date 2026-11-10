@@ -1,0 +1,53 @@
+START HERE - CARDIOVASCULAR DISEASE PROJECT
+
+1. DOWNLOAD AND OPEN THE PROJECT
+Download the repository ZIP from GitHub and extract it first.
+Open the extracted folder containing this file in VS Code or a terminal.
+Install Python 3.12 if it is not already installed.
+
+2. FIRST-TIME INSTALLATION (WINDOWS)
+In a terminal opened in this project folder, run:
+
+    python -m venv .venv
+    .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+3. OPEN THE INTERACTIVE INTERFACE
+Open the interface folder and double-click start_app.bat.
+Alternatively, from the project folder run:
+
+    .venv\Scripts\python.exe -m streamlit run interface/app.py --server.address=127.0.0.1 --browser.gatherUsageStats=false
+
+The browser opens the local app, normally at http://localhost:8501.
+Enter the 11 fields and click Predict disease presence.
+Keep the terminal open while using the interface. Press Ctrl+C to stop it.
+The app loads the included model; it does not train a model.
+The dataset is NOT needed to use this interface.
+
+MACOS / LINUX
+From the project folder:
+
+    python3 -m venv .venv
+    .venv/bin/python -m pip install -r requirements.txt
+    .venv/bin/python -m streamlit run interface/app.py --server.address=127.0.0.1 --browser.gatherUsageStats=false
+
+4. VIEW THE PROJECT
+Presentation: open Cardiovascular_Study_Editorial.html in your browser.
+Report: open cardiovascular_disease_report.ipynb in VS Code or Jupyter.
+Overview and results: read README.md.
+
+5. TRAIN A NEW MODEL (OPTIONAL)
+First place the original dataset at assets/DataSets/cardio.csv.
+It is not published here because redistribution permission is unconfirmed.
+On Windows, from the project folder run:
+
+    .venv\Scripts\python.exe train_and_evaluate.py
+
+This creates a fresh model in memory and prints the evaluation.
+It does not replace the interface's saved model.
+
+IMPORTANT THRESHOLD DIFFERENCE
+The original Streamlit interface uses the preserved 0.50 threshold.
+The training script and the notebook's final experiment use 0.37.
+Different thresholds can give different class predictions for the same score.
+The interface displays the original 0.50 evaluation metrics.
+This is an educational demonstration, not a medical diagnosis.

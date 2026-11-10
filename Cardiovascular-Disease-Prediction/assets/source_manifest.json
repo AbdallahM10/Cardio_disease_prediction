@@ -1,0 +1,27 @@
+[
+  {
+    "path": "DataSets/cardio.csv",
+    "bytes": 2871911,
+    "sha256": "d629703c8428505e46a97641817ab0c4a223a35fa4196df31e49b5036ab0e952"
+  },
+  {
+    "path": "final_evaluation/model_with_clipping.joblib",
+    "bytes": 372664,
+    "sha256": "a193085c7dddf623729ce83de105bc1dfc8e3e1866f5ff18548122da6bf34e16"
+  },
+  {
+    "path": "final_evaluation/evaluation_metadata.json",
+    "bytes": 461,
+    "sha256": "1ebc6053d088e3f4b268c1cf9fbb0eef0388827128eb67eb0e42acfb58b46514"
+  },
+  {
+    "path": "final_evaluation/test_metrics.csv",
+    "bytes": 288,
+    "sha256": "6acc858a07916dc0d6531d5608521a1c8fbfd3d4db34f3b3080a0da90979d19c"
+  },
+  {
+    "path": "final_evaluation/test_predictions.csv",
+    "bytes": 414098,
+    "sha256": "f471fe078363d250eb975e31ff43802db26746c75373d7c7fc2350c6a260c332"
+  }
+]

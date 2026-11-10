@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "max_iter": 200,
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "threshold": 0.5,
+  "train_samples": 54994,
+  "test_samples": 13748,
+  "split": "GroupShuffleSplit(test_size=0.2, random_state=42); groups=identical input measurements",
+  "sklearn_version": "1.9.1",
+  "scope": "Pressure-valid records only; no test-driven tuning"
+}
